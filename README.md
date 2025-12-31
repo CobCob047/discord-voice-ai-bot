@@ -4,7 +4,7 @@
 
 ### The most advanced open-source Discord voice assistant
 
-Real-time transcription • AI responses • User analytics • Music playback • 200+ voice commands
+Real-time transcription • AI responses • User analytics • Music playback • 200+ voice commands • Web dashboard
 
 [![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![Discord.py](https://img.shields.io/badge/discord.py-2.0+-blue.svg)](https://github.com/Rapptz/discord.py)
@@ -48,7 +48,8 @@ Real-time transcription • AI responses • User analytics • Music playback �
 - **Soundboard** - Custom audio clips
 
 ### 🛠️ Advanced Features
-- **200+ voice commands** - Wake word detection ("Hey Jarvis")
+- **Web dashboard** - Real-time statistics and analytics interface
+- **200+ voice commands • Web dashboard** - Wake word detection ("Hey Jarvis")
 - **Multi-server support** - Run on unlimited Discord servers
 - **Per-server logging** - Each server gets isolated transcription logs
 - **Voice cloning** - TTS with user voice samples (optional)
@@ -247,6 +248,34 @@ Connected to Discord servers: YourServerName
 ---
 
 ## 🎙️ Voice Commands
+
+---
+
+## 📊 Web Dashboard
+
+Access real-time bot statistics through the built-in web dashboard:
+
+### Features
+- 📈 **Live transcription feed** - See conversations in real-time
+- 👥 **User leaderboards** - Top talkers, most active users
+- 💬 **Word frequency analysis** - Most used words and phrases
+- 🎵 **Music history** - Track of all songs played
+- 📉 **Activity graphs** - Voice channel usage over time
+- 🖥️ **System health** - Bot uptime, memory usage, GPU stats
+
+### Access Dashboard
+```bash
+# Dashboard runs on port 8080 by default
+# Access at: http://your-server-ip:8080
+```
+
+**Dashboard includes:**
+- Real-time WebSocket updates
+- Responsive mobile design
+- Dark/light theme toggle
+- Export data to CSV
+- Customizable time ranges
+
 
 The bot listens for commands starting with **"Hey Jarvis"** or **"Jarvis"** (customizable).
 
