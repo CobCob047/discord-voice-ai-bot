@@ -1,8 +1,46 @@
+# Environment variables
 .env
-*.db
-*.log
+.env.local
+
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 venv/
-*.pyc
-voice_samples/
+.venv/
+ENV/
+env/
+build/
+dist/
+*.egg-info/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
 logs/
+bot.log
+nohup.out
+
+# Whisper models (downloaded at runtime)
+whisper_models/
+
+# Voice samples
+voice_samples/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Server logs
+server_logs/
