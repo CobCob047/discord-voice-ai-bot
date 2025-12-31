@@ -20,7 +20,8 @@ Real-time transcription • AI responses • User analytics • Music playback �
 ## ✨ Features
 
 ### 🎙️ Voice Recognition & Transcription
-- **Real-time speech-to-text** using OpenAI Whisper (Large-v3)
+- **Real-time speech-to-text** using OpenAI Whisper distil-large-v3 (turbo)
+- **48kHz audio processing** - Professional-grade voice capture optimized for RTX 4090
 - **Emotion detection** from voice tone and pitch analysis
 - **Voice biometrics** - unique audio profile for each user
 - **Multi-language support** - transcribe in 50+ languages
@@ -297,8 +298,8 @@ Now the bot responds to your custom name!
 
 Trade accuracy for speed by changing models in `bot.py`:
 ```python
-# Options: tiny, base, small, medium, large-v3
-whisper_model = WhisperModel("large-v3", device="cuda", compute_type="float16")
+# Options: tiny, base, small, medium, large-v3, distil-large-v3
+whisper_model = WhisperModel("distil-large-v3", device="cuda", compute_type="float16")
 ```
 
 **Model comparison:**
