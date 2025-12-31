@@ -1,0 +1,8 @@
+.env
+*.db
+*.log
+__pycache__/
+venv/
+*.pyc
+voice_samples/
+logs/
