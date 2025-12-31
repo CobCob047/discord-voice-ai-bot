@@ -265,8 +265,8 @@ Access real-time bot statistics through the built-in web dashboard:
 
 ### Access Dashboard
 ```bash
-# Dashboard runs on port 8080 by default
-# Access at: http://your-server-ip:8080
+# Dashboard runs on port 9000 by default
+# Access at: http://your-server-ip:9000
 ```
 
 **Dashboard includes:**
