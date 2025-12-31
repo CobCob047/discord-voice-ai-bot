@@ -6485,7 +6485,7 @@ Format numbers with commas in the response."""
     
     # Debug mode toggle (owner only)
     if "debug mode" in text_lower or "toggle debug" in text_lower:
-        if requestor.id == 251202041966231572:
+        if requestor.id == 987654321098765432:
             global DEBUG_MODE
             DEBUG_MODE = not DEBUG_MODE
             status = "enabled" if DEBUG_MODE else "disabled"
@@ -6494,7 +6494,7 @@ Format numbers with commas in the response."""
     
     # Multi-server sync (owner only)
     if "enable sync" in text_lower or "sync servers" in text_lower:
-        if requestor.id == 251202041966231572:
+        if requestor.id == 987654321098765432:
             SYNC_ENABLED = True
             if str(guild_id) not in SYNC_GUILDS:
                 SYNC_GUILDS.append(str(guild_id))
@@ -6502,14 +6502,14 @@ Format numbers with commas in the response."""
         return "Owner only"
     
     if "disable sync" in text_lower:
-        if requestor.id == 251202041966231572:
+        if requestor.id == 987654321098765432:
             SYNC_ENABLED = False
             return "Sync disabled"
         return "Owner only"
     
     # Buffer diagnostic (owner only)
     if "buffer status" in text_lower or "check buffers" in text_lower:
-        if requestor.id == 251202041966231572:
+        if requestor.id == 987654321098765432:
             if guild_id in voice_clients and 'sink' in voice_clients[guild_id]:
                 sink = voice_clients[guild_id]['sink']
                 buffer_info = [(uid, len(data.get("buffer", []))) for uid, data in sink.user_buffers.items()]
@@ -6522,7 +6522,7 @@ Format numbers with commas in the response."""
     
     # Go to bed (owner only)
     if "go to bed" in text_lower or ("goodnight" in text_lower and "jarvis" in text_lower):
-        if requestor.id == 251202041966231572:  # Your user ID
+        if requestor.id == 987654321098765432:  # Your user ID
             vc = voice_clients.get(guild_id, {}).get('vc')
             if vc:
                 await vc.disconnect()
@@ -7083,7 +7083,7 @@ Say 'Jarvis' before commands!"""
     
     # Wake word sensitivity
     if "wake word" in text_lower and ("strict" in text_lower or "loose" in text_lower or "sensitivity" in text_lower):
-        if requestor.id == 251202041966231572:  # Owner only
+        if requestor.id == 987654321098765432:  # Owner only
             global wake_word_strict
             if "strict" in text_lower:
                 wake_word_strict = True
@@ -9957,7 +9957,7 @@ async def dashboard_handler(request):
             const resp = await fetch('/music_control', {{
                 method: 'POST',
                 headers: {{'Content-Type': 'application/json'}},
-                body: JSON.stringify({{action: action, guild_id: 1396969297162539028}})
+                body: JSON.stringify({{action: action, guild_id: 123456789012345678}})
             }});
             const data = await resp.json();
             document.getElementById('music-status').textContent = data.status || `Volume: ${{data.volume}}%`;
@@ -10040,7 +10040,7 @@ async def music_control_handler(request):
     """Handle music control buttons"""
     data = await request.json()
     action = data.get('action')
-    guild_id = int(data.get('guild_id', 1396969297162539028))
+    guild_id = int(data.get('guild_id', 123456789012345678))
     
     vc = voice_clients.get(guild_id, {}).get('vc')
     
