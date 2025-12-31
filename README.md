@@ -313,7 +313,7 @@ whisper_model = WhisperModel("large-v3", device="cuda", compute_type="float16")
 
 **Don't have an RTX 4090?** Let us handle it for you.
 
-[**OneRaap Hosting**](https://discord.gg/mHsqykcyZa) offers fully managed Discord voice AI bot hosting with RTX 4090 infrastructure.
+[**OneRaap Hosting**](https://www.oneraap.com/gpu/) offers fully managed Discord voice AI bot hosting with RTX 4090 infrastructure.
 
 ✅ RTX 4090 GPU infrastructure  
 ✅ 99.9% uptime guarantee  
@@ -372,7 +372,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) for deta
 
 ## 🙏 Credits
 
-**Created by [Cob](https://github.com/CobCob047) / [OneRaap Hosting](https://oneraap.com)**
+**Created by [Cob](https://github.com/CobCob047) / [OneRaap Hosting](https://www.oneraap.com)**
 
 Built with:
 - [OpenAI Whisper](https://github.com/openai/whisper) - Speech recognition
