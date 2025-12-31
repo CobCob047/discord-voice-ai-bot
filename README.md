@@ -313,7 +313,7 @@ whisper_model = WhisperModel("large-v3", device="cuda", compute_type="float16")
 
 **Don't have an RTX 4090?** Let us handle it for you.
 
-[**OneRaap Hosting**](https://discord.gg/mHsqykcyZa) offers fully managed Discord voice AI bot hosting:
+[**OneRaap Hosting**](https://discord.gg/mHsqykcyZa) offers fully managed Discord voice AI bot hosting with RTX 4090 infrastructure.
 
 ✅ RTX 4090 GPU infrastructure  
 ✅ 99.9% uptime guarantee  
@@ -322,12 +322,6 @@ whisper_model = WhisperModel("large-v3", device="cuda", compute_type="float16")
 ✅ Custom voice commands  
 ✅ Automatic updates  
 
-**Pricing:**
-- Basic Plan: $20/month (1 server)
-- Pro Plan: $40/month (unlimited servers + advanced features)
-- Setup Fee: $50 one-time (includes Discord bot creation & customization)
-
-**[Join Discord](https://discord.gg/mHsqykcyZa)** or email: oneraaphosting@gmail.com
 
 ---
 
